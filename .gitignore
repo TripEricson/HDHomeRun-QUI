@@ -1,0 +1,60 @@
+# HDHomeRun-QUI .gitignore
+
+# --- CMake build output (in-source builds) ---
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# --- Out-of-source build folders ---
+build/
+build-*/
+cmake-build-*/
+
+# --- Qt autogen / generated files ---
+*_autogen/
+moc_*.cpp
+moc_*.h
+ui_*.h
+qrc_*.cpp
+*.qm
+.qt/
+
+# --- Qt Creator per-user settings (paths, kits; machine-specific) ---
+CMakeLists.txt.user
+CMakeLists.txt.user.*
+*.pro.user
+*.pro.user.*
+.qtcreator/
+
+# --- The compiled program ---
+/HDHomeRun-QUI
+*.o
+*.obj
+*.a
+*.so
+*.exe
+
+# --- Third-party: SiliconDust's libhdhomerun, cloned separately (see CMakeLists.txt) ---
+libhdhomerun/
+
+# --- Backups and editor leftovers ---
+*.bak
+*.bak.*
+*~
+*.swp
+.*.swp
+*.orig
+*.rej
+.vscode/
+.idea/
+.DS_Store
+
+# --- Captures, in case the save folder points here ---
+*.pcap
+*.dbg
+rf*.ts
+rf*.txt
